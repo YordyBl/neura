@@ -3,6 +3,7 @@ import { Inter } from "next/font/google"
 import type React from "react"
 import type { Metadata } from "next"
 import MouseMoveEffect from "@/components/mouse-move-effect"
+import WhatsappButton from "@/components/whatsapp"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -23,6 +24,7 @@ export default function RootLayout({
       <body className={`${inter.className} bg-background text-foreground antialiased`}>
         <MouseMoveEffect />
         {children}
+        <WhatsappButton />
       </body>
     </html>
   )
